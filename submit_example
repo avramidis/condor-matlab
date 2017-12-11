@@ -1,0 +1,11 @@
+# Uncomment the next line to receive all notices regarding checkpoints, completion, and errors
+notification = Always
+
+Universe = vanilla
+Executable = run_example.sh
+
+should_transfer_files   = YES
+when_to_transfer_output = ON_EXIT_OR_EVICT
+transfer_input_files = example.m
+
+queue
