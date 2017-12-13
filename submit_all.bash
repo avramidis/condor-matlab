@@ -2,10 +2,12 @@
 
 declare -A matrix
 
+# Parameter values for the first job
 matrix[0,0]=0
 matrix[0,1]=1
 matrix[0,2]=2
 
+# Parameter values for the second job
 matrix[1,0]=1
 matrix[1,1]=10
 matrix[1,2]=20
