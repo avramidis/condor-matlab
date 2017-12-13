@@ -18,7 +18,7 @@ do
 echo ${matrix[$i,0]}
 echo ${matrix[$i,1]}
 echo ${matrix[$i,2]}
-#condor_submit submit_example -append arguments="\${matrix[$i,0]} \${matrix[$i,1]} \${matrix[$i,2]}"
+
 condor_submit submit_example -append arguments="${matrix[$i,0]} ${matrix[$i,1]} ${matrix[$i,2]}" \
 transfer_output_files="${matrix[$i,0]}_a.mat,${matrix[$i,0]}_b.mat" \
 Output="${matrix[$i,0]}.out" Error="${matrix[$i,0]}.err" Log="${matrix[$i,0]}.log"
