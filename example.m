@@ -30,9 +30,9 @@ function example(name, a, b)
 tic
 disp(['The first value is: ' num2str(a)])
 disp(['The second value is: ' num2str(b)])
-tic
 
 save([num2str(name) '_a.mat'],'a')
 save([num2str(name) '_b.mat'],'b')
+toc
 
 end
