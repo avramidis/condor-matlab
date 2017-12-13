@@ -3,14 +3,14 @@
 declare -A matrix
 
 # Parameter values for the first job
-matrix[0,0]=0
-matrix[0,1]=1
-matrix[0,2]=2
+matrix[0,0]=0   # Job ID
+matrix[0,1]=1   # MATLAB function first argument
+matrix[0,2]=2   # MATLAB function second argument
 
 # Parameter values for the second job
-matrix[1,0]=1
-matrix[1,1]=10
-matrix[1,2]=20
+matrix[1,0]=1   # Job ID
+matrix[1,1]=10  # MATLAB function first argument
+matrix[1,2]=20  # MATLAB function second argument
 
 for i in {0..1}
 do
